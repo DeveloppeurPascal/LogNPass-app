@@ -69,3 +69,12 @@ __recovery/
 modules/
 
 _PRIVATE/
+
+Win32/
+Win64/
+OSX64/
+OSXARM64/
+Android/
+Android64/
+iOSDevice64/
+Linux64/
