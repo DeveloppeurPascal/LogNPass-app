@@ -78,3 +78,6 @@ Android/
 Android64/
 iOSDevice64/
 Linux64/
+
+.DS_Store
+Thumbs.db
