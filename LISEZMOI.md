@@ -41,6 +41,7 @@ Ce dépôt de code dépend des dépôts suivants :
 
 * [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) dans le sous dossier ./lib-externes/BoiteDeDialogueAPropos
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) dans le sous dossier ./lib-externes/librairies
+* [DeveloppeurPascal/LogNPass-Delphi](https://github.com/DeveloppeurPascal/LogNPass-Delphi) dans le sous dossier ./lib-externes/LogNPass-Delphi
 
 ## Protéger vos sites et programmes
 

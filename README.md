@@ -41,6 +41,7 @@ This project depends on :
 
 * [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) in the sub folder ./lib-externes/BoiteDeDialogueAPropos
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) in the sub folder ./lib-externes/librairies
+* [DeveloppeurPascal/LogNPass-Delphi](https://github.com/DeveloppeurPascal/LogNPass-Delphi) in the sub folder ./lib-externes/LogNPass-Delphi
 
 ## Protect your sites and programs
 
