@@ -1,0 +1,692 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Log'#39'n Pass'
+  ClientHeight = 605
+  ClientWidth = 517
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Orientations = [Portrait, Landscape, InvertedPortrait, InvertedLandscape]
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object tcPrincipal: TTabControl
+    Align = Client
+    Images = DataModule1.ImageList1
+    Size.Width = 517.000000000000000000
+    Size.Height = 605.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 2
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      517s
+      579s
+      517s
+      579s
+      517s
+      579s)
+    object tabListe: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      ImageIndex = 2
+      Size.Width = 60.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Liste'
+      ExplicitSize.cx = 44.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object tcListe: TTabControl
+        Align = Client
+        Size.Width = 517.000000000000000000
+        Size.Height = 539.000000000000000000
+        Size.PlatformDefault = False
+        TabIndex = 2
+        TabOrder = 0
+        TabPosition = None
+        Sizes = (
+          517s
+          539s
+          517s
+          539s
+          517s
+          539s)
+        object tabListeVisu: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tabListeVisu'
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          object lstListe: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 517.000000000000000000
+            Size.Height = 539.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            CanSwipeDelete = False
+            OnItemClick = lstListeItemClick
+            SelectionCrossfade = True
+          end
+        end
+        object tabListeAjout: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tabListeAjout'
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          object tabListeAjoutLayout: TLayout
+            Align = Client
+            Padding.Left = 10.000000000000000000
+            Padding.Top = 10.000000000000000000
+            Padding.Right = 10.000000000000000000
+            Padding.Bottom = 10.000000000000000000
+            Size.Width = 517.000000000000000000
+            Size.Height = 539.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lblCrtPassphrase: TLabel
+              Align = Top
+              AutoSize = True
+              Position.X = 10.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 497.000000000000000000
+              Size.Height = 16.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.WordWrap = False
+              Text = 'Votre phrase myst'#232're'
+            end
+            object lblCrtLibelle: TLabel
+              Align = Top
+              AutoSize = True
+              Position.X = 10.000000000000000000
+              Position.Y = 10.000000000000000000
+              Size.Width = 497.000000000000000000
+              Size.Height = 16.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.WordWrap = False
+              Text = 'Nom de cet acc'#232's ou mot de passe'
+            end
+            object edtCrtPassphrase: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 1
+              Position.X = 10.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 497.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Phrase cl'#233' pour cet acc'#232's'
+              KillFocusByReturn = True
+              OnClick = edtCrtPassphraseClick
+            end
+            object edtCrtLibelle: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 0
+              Position.X = 10.000000000000000000
+              Position.Y = 26.000000000000000000
+              Size.Width = 497.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Nom de cet acc'#232's'
+              KillFocusByReturn = True
+              OnClick = edtCrtLibelleClick
+            end
+            object btnCrtEnregistrer: TButton
+              Anchors = [akTop, akRight]
+              Images = DataModule1.ImageList1
+              ImageIndex = 5
+              Position.X = 340.000000000000000000
+              Position.Y = 96.000000000000000000
+              TabOrder = 2
+              Text = 'Enregistrer'
+              OnClick = btnCrtEnregistrerClick
+            end
+            object btnCrtCancel: TButton
+              Anchors = [akTop, akRight]
+              Images = DataModule1.ImageList1
+              ImageIndex = 6
+              Position.X = 428.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 80.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Text = 'Annuler'
+              OnClick = btnCrtCancelClick
+            end
+          end
+        end
+        object tabListeDetail: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'tabListeDetail'
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+          object tabListeDetailLayout: TLayout
+            Align = Client
+            Padding.Left = 10.000000000000000000
+            Padding.Top = 10.000000000000000000
+            Padding.Right = 10.000000000000000000
+            Padding.Bottom = 10.000000000000000000
+            Size.Width = 517.000000000000000000
+            Size.Height = 539.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object pbFondHaut: TRectangle
+              Align = Bottom
+              Fill.Kind = Gradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = claWhite
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Position.X = 10.000000000000000000
+              Position.Y = 429.000000000000000000
+              Sides = []
+              Size.Width = 497.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              OnResize = pbFondHautResize
+            end
+            object pbFondBas: TRectangle
+              Align = Bottom
+              Fill.Kind = Gradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = claWhite
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Position.X = 10.000000000000000000
+              Position.Y = 479.000000000000000000
+              Sides = []
+              Size.Width = 497.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object lblDetailLibelle: TLabel
+              Align = Top
+              AutoSize = True
+              Position.X = 10.000000000000000000
+              Position.Y = 10.000000000000000000
+              Size.Width = 497.000000000000000000
+              Size.Height = 16.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.WordWrap = False
+              Text = 'Nom de cet acc'#232's ou mot de passe'
+            end
+            object edtDetailLibelle: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 0
+              ReadOnly = True
+              Position.X = 10.000000000000000000
+              Position.Y = 26.000000000000000000
+              Size.Width = 497.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Nom de cet acc'#232's'
+              KillFocusByReturn = True
+            end
+            object lblDetailPassphrase: TLabel
+              Align = Top
+              AutoSize = True
+              Position.X = 10.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 497.000000000000000000
+              Size.Height = 16.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.WordWrap = False
+              Text = 'Votre phrase myst'#232're'
+            end
+            object edtDetailPassphrase: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 10.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 497.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Phrase cl'#233' pour cet acc'#232's'
+              KillFocusByReturn = True
+              OnClick = edtDetailPassphraseClick
+            end
+            object lblDetailCodeTitre: TLabel
+              Align = Bottom
+              AutoSize = True
+              Position.X = 10.000000000000000000
+              Position.Y = 397.000000000000000000
+              Scale.X = 2.000000000000000000
+              Scale.Y = 2.000000000000000000
+              Size.Width = 248.500000000000000000
+              Size.Height = 16.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Center
+              TextSettings.WordWrap = False
+              Text = 'Votre code d'#39'acc'#232's :'
+            end
+            object pbDessus: TRectangle
+              Fill.Color = claYellowgreen
+              Position.X = 16.000000000000000000
+              Position.Y = 208.000000000000000000
+              Size.Width = 489.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object lblDetailCode: TLabel
+              AutoSize = True
+              StyledSettings = [Family, Size, Style]
+              HitTest = True
+              Position.X = 58.000000000000000000
+              Position.Y = 412.000000000000000000
+              Scale.X = 3.000000000000000000
+              Scale.Y = 3.000000000000000000
+              Size.Width = 50.000000000000000000
+              Size.Height = 16.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.FontColor = claCornsilk
+              TextSettings.HorzAlign = Center
+              TextSettings.WordWrap = False
+              Text = '(inconnu)'
+              OnClick = lblDetailCodeClick
+              OnResize = lblDetailCodeResize
+            end
+            object lblDetailCodeEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 2
+              CanFocus = False
+              Position.X = 208.000000000000000000
+              Position.Y = 256.000000000000000000
+              EnableDragHighlight = False
+              Enabled = False
+              Visible = False
+            end
+          end
+        end
+      end
+      object tbListeTitre: TToolBar
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Size.Width = 517.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblListeTitre: TLabel
+          Align = Contents
+          Size.Width = 517.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Log'#39'n Pass'
+        end
+        object btnListeBack: TSpeedButton
+          Align = MostLeft
+          CanFocus = True
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          Text = 'Retour'
+          OnClick = btnListeBackClick
+        end
+        object btnListeAjouter: TSpeedButton
+          Align = MostRight
+          CanFocus = True
+          Position.X = 402.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 30.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'addtoolbutton'
+          Text = 'Ajouter'
+          OnClick = btnListeAjouterClick
+        end
+        object btnListeSupprimer: TSpeedButton
+          Align = MostRight
+          CanFocus = True
+          Position.X = 432.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'deletetoolbutton'
+          Text = 'Supprimer'
+          OnClick = btnListeSupprimerClick
+        end
+      end
+    end
+    object tabReglages: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      ImageIndex = 4
+      Size.Width = 84.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'R'#233'glages'
+      ExplicitSize.cx = 84.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object tbReglagesTitre: TToolBar
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Size.Width = 517.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblReglagesTitre: TLabel
+          Align = Contents
+          Size.Width = 517.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'R'#233'glages'
+        end
+      end
+      object tabReglagesLayout: TLayout
+        Align = Client
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 517.000000000000000000
+        Size.Height = 539.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lblReglagesAfficherPassPhrase: TLabel
+          Align = Top
+          AutoSize = True
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 497.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Afficher la phrase myst'#232're ?'
+        end
+        object switchAfficherPassPhrase: TSwitch
+          Anchors = [akTop, akRight]
+          IsChecked = False
+          Position.X = 423.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 1
+          OnSwitch = switchAfficherPassPhraseSwitch
+        end
+        object lblReglagesAfficherPassPhraseInfos: TLabel
+          Align = Top
+          AutoSize = True
+          Position.X = 10.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 497.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          Text = 
+            'Pour des raisons de s'#233'curit'#233', ce param'#232'te ne sera pas sauvegard'#233 +
+            '.'
+        end
+      end
+    end
+    object tabAPropos: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      ImageIndex = 1
+      Size.Width = 62.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Infos'
+      ExplicitSize.cx = 46.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object tbAProposTitre: TToolBar
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Size.Width = 517.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblAProposTitre: TLabel
+          Align = Contents
+          Size.Width = 517.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'A propos'
+        end
+        object btnAProposGoWeb: TSpeedButton
+          Align = MostRight
+          CanFocus = True
+          Images = DataModule1.ImageList1
+          ImageIndex = 7
+          Position.X = 432.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toolbutton'
+          Text = 'Site web'
+          OnClick = btnAProposGoWebClick
+        end
+      end
+      object lblAProposTexte: TLabel
+        Align = Client
+        AutoSize = True
+        Size.Width = 517.000000000000000000
+        Size.Height = 539.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'a propos'
+        TabOrder = 2
+      end
+    end
+  end
+  object Lang1: TLang
+    Lang = 'fr'
+    Left = 112
+    Top = 400
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 208
+    Top = 280
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 224
+    Top = 424
+  end
+  object LognpassConnection: TFDConnection
+    Params.Strings = (
+      
+        'Database=Z:\OlfSoftware\sites_web\lognpass\dev\app\lognpass_dev.' +
+        'db'
+      'ForeignKeys=Off'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    AfterConnect = LognpassConnectionAfterConnect
+    Left = 73
+    Top = 283
+  end
+  object ListeTable: TFDQuery
+    Connection = LognpassConnection
+    SQL.Strings = (
+      
+        'SELECT * FROM liste WHERE supprime="N" ORDER BY libelle,dateheur' +
+        'e_creation')
+    Left = 151
+    Top = 327
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ListeTable
+    ScopeMappings = <>
+    Left = 248
+    Top = 344
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 52
+    Top = 381
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'libelle'
+      Control = lstListe
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'libelle'
+      Control = edtDetailLibelle
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      FieldName = 'passphrase'
+      Control = edtDetailPassphrase
+      Track = False
+    end
+  end
+  object qryListeUpdate: TFDQuery
+    Connection = LognpassConnection
+    SQL.Strings = (
+      
+        'UPDATE liste SET libelle=:libelle,passphrase=:passphrase,dateheu' +
+        're_modification=CURRENT_TIMESTAMP WHERE guid=:guid and dateheure' +
+        '_creation=:dateheure_creation')
+    Left = 80
+    Top = 216
+    ParamData = <
+      item
+        Name = 'LIBELLE'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'PASSPHRASE'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'GUID'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'DATEHEURE_CREATION'
+        DataType = ftDateTime
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+  object qryListeDelete: TFDQuery
+    Connection = LognpassConnection
+    SQL.Strings = (
+      
+        'UPDATE liste SET supprime="O" WHERE guid=:guid and dateheure_cre' +
+        'ation=:dateheure_creation')
+    Left = 168
+    Top = 216
+    ParamData = <
+      item
+        Name = 'GUID'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'DATEHEURE_CREATION'
+        DataType = ftDateTime
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+  object qryListeInsert: TFDQuery
+    Connection = LognpassConnection
+    SQL.Strings = (
+      
+        'INSERT INTO liste (libelle,passphrase) VALUES (:libelle,:passphr' +
+        'ase)')
+    Left = 248
+    Top = 216
+    ParamData = <
+      item
+        Name = 'LIBELLE'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'PASSPHRASE'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+end
