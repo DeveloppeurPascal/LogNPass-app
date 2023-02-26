@@ -18,12 +18,12 @@ Ce dépôt de code contient un projet développé en langage Pascal Objet sous D
 Si vous ne voulez pas compiler vous même le programme vous pouvez aussi [télécharger une version](https://lognpass.fr/c/_5-telecharger.html) pour votre systèmes d'exploitation :
 
 * Apple iOS (ARM - 64 bits) : [App Store](https://apps.apple.com/us/app/logn-pass/id1046096987)
-* Apple macOS (x64 - processeurs Intel) : [Mac App Store](https://apps.apple.com/us/app/logn-pass/id1046096987) - [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
-* Apple macOS (ARM - processeurs Apple Silicon M1/M2/...) : [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
+* Apple macOS (x64 - processeurs Intel) : [Mac App Store](https://apps.apple.com/us/app/logn-pass/id1046096987) - [GitHub (macOS High Sierra et au delà)](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
+* Apple macOS (ARM - processeurs Apple Silicon M1/M2/...) : [Mac App Store](https://apps.apple.com/us/app/logn-pass/id1046096987) - [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
 * Android (ARM - 32 bits) : [Amazon Appstore](https://www.amazon.fr/OLF-SOFTWARE-Logn-Pass/dp/B01B3HU94U/ref=sr_1_1) - [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
 * Android (ARM - 64 bits) : [Google Play](https://play.google.com/store/apps/details?id=olfsoftware.lognpass.android) - [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
-* Microsoft Windows (x86 - 32 bits) : [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases) - [Microsoft Store]()
-* Microsoft Windows (x64 - 64 bits) : [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases) - [Microsoft Store]()
+* Microsoft Windows (x86 - 32 bits) : [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases) - [Microsoft Store](https://www.microsoft.com/store/apps/9N6VK8JKSRNX)
+* Microsoft Windows (x64 - 64 bits) : [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases) - [Microsoft Store](https://www.microsoft.com/store/apps/9N6VK8JKSRNX)
 
 Les téléchargements depuis GitHub sont autonomes. Vous ne serez prévenus d'une nouvelle version du programme que si vous suivez ce projet et en demandez les notifications à chaque release.
 
