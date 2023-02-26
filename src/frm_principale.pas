@@ -145,12 +145,12 @@ begin
     else
     begin
 {$IF Defined(ANDROID)}
-      Form1.Visible := false;
+      frmMain.Visible := false;
       MessageDlg('La phrase mystère est obligatoire.', TMsgDlgType.mtError,
         [TMsgDlgBtn.mbOK], 0, TMsgDlgBtn.mbOK,
         procedure(const AResult: TModalResult)
         begin
-          Form1.Visible := true;
+          frmMain.Visible := true;
         end);
 {$ELSE}
       MessageDlg('La phrase mystère est obligatoire.', TMsgDlgType.mtError,
@@ -164,12 +164,12 @@ begin
   else
   begin
 {$IF Defined(ANDROID)}
-    Form1.Visible := false;
+    frmMain.Visible := false;
     MessageDlg('Le nom est obligatoire.', TMsgDlgType.mtError,
       [TMsgDlgBtn.mbOK], 0, TMsgDlgBtn.mbOK,
       procedure(const AResult: TModalResult)
       begin
-        Form1.Visible := true;
+        frmMain.Visible := true;
       end);
 {$ELSE}
     MessageDlg('Le nom est obligatoire.', TMsgDlgType.mtError,
@@ -194,7 +194,7 @@ end;
 procedure TfrmMain.btnListeSupprimerClick(Sender: TObject);
 begin
 {$IF Defined(ANDROID)}
-  Form1.Visible := false;
+  frmMain.Visible := false;
   MessageDlg('Voulez-vous supprimer ce code ?', TMsgDlgType.mtConfirmation,
     [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], 0, TMsgDlgBtn.mbNo,
     procedure(const AResult: TModalResult)
@@ -209,7 +209,7 @@ begin
         ListeTable.Refresh;
         ListeVisuAffiche;
       end;
-      Form1.Visible := true;
+      frmMain.Visible := true;
     end);
 {$ELSE}
   if (mrYes = MessageDlg('Voulez-vous supprimer ce code ?',
