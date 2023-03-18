@@ -39,7 +39,7 @@ To download this project you better should use "git" command but you also can do
 
 This project depends on :
 
-* [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) in the sub folder ./lib-externes/BoiteDeDialogueAPropos
+* [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) in the sub folder ./lib-externes/AboutDialog-Delphi-Component
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) in the sub folder ./lib-externes/librairies
 * [DeveloppeurPascal/LogNPass-Delphi](https://github.com/DeveloppeurPascal/LogNPass-Delphi) in the sub folder ./lib-externes/LogNPass-Delphi
 
