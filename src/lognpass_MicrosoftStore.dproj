@@ -433,7 +433,7 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <BT_BuildType>AppStore</BT_BuildType>
-        <VerInfo_Keys>CompanyName=Olf Software;FileDescription=Générateur de codes uniques pour utilisateurs de sites protégés par Log&apos;n Pass;FileVersion=0.0.0.0;InternalName=;LegalCopyright=2016-2023 Patrick Prémartin - Olf Software;LegalTrademarks=;OriginalFilename=;ProductName=Log&apos;n Pass;ProductVersion=1.1;Comments=;ProgramID=fr.olfsoftware.lognpass</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Olf Software;FileDescription=Générateur de codes uniques pour utilisateurs de sites protégés par Log&apos;n Pass;FileVersion=0.0.0.0;InternalName=;LegalCopyright=2016-2024 Patrick Prémartin - Olf Software;LegalTrademarks=;OriginalFilename=;ProductName=Log&apos;n Pass;ProductVersion=1.2;Comments=;ProgramID=fr.olfsoftware.lognpass</VerInfo_Keys>
         <Icon_MainIcon>..\assets\icons\lognpass.ico</Icon_MainIcon>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
         <Icns_MainIcns>..\assets\icons\lognpass.icns</Icns_MainIcns>
@@ -445,9 +445,9 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <BT_BuildType>AppStore</BT_BuildType>
-        <VerInfo_Keys>CompanyName=Olf Software;FileDescription=Générateur de codes uniques pour utilisateurs de sites protégés par Log&apos;n Pass;FileVersion=0.0.0.0;InternalName=;LegalCopyright=2016-2023 Patrick Prémartin - Olf Software;LegalTrademarks=;OriginalFilename=;ProductName=Log&apos;n Pass;ProductVersion=1.1;Comments=;ProgramID=fr.olfsoftware.lognpass</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Olf Software;FileDescription=Générateur de codes uniques pour utilisateurs de sites protégés par Log&apos;n Pass;FileVersion=0.0.0.0;InternalName=;LegalCopyright=2016-2024 Patrick Prémartin - Olf Software;LegalTrademarks=;OriginalFilename=;ProductName=Log&apos;n Pass;ProductVersion=1.2;Comments=;ProgramID=fr.olfsoftware.lognpass</VerInfo_Keys>
         <Icon_MainIcon>..\assets\icons\lognpass.ico</Icon_MainIcon>
-        <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
+        <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <Icns_MainIcns>..\assets\icons\lognpass.icns</Icns_MainIcns>
         <PF_UWPPublisher>CN=C9056E45-4697-4279-8E35-6C02570462A5</PF_UWPPublisher>
         <PF_UWPPackageName>OLFSOFTWARE.LognPass</PF_UWPPackageName>
@@ -472,6 +472,11 @@
         </DCCReference>
         <DCCReference Include="..\lib-externes\librairies\src\u_md5.pas"/>
         <DCCReference Include="..\lib-externes\librairies\src\u_urlOpen.pas"/>
+        <DCCReference Include="..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialog.pas"/>
+        <DCCReference Include="..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialogForm.pas">
+            <Form>OlfAboutDialogForm</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
