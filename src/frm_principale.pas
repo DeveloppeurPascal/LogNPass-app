@@ -56,7 +56,8 @@ uses
   FMX.ImgList,
   FMX.Objects,
   FireDAC.Phys.SQLiteWrapper.Stat,
-  Olf.FMX.AboutDialog, FireDAC.Phys.SQLiteWrapper.FDEStat;
+  Olf.FMX.AboutDialog,
+  FireDAC.Phys.SQLiteWrapper.FDEStat;
 
 type
   TfrmMain = class(TForm)
