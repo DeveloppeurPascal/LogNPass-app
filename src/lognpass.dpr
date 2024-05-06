@@ -8,7 +8,9 @@ uses
   u_lognpass in '..\lib-externes\LogNPass-Delphi\src\u_lognpass.pas',
   dm in 'dm.pas' {DataModule1: TDataModule},
   u_urlOpen in '..\lib-externes\librairies\src\u_urlOpen.pas',
-  u_md5 in '..\lib-externes\librairies\src\u_md5.pas';
+  u_md5 in '..\lib-externes\librairies\src\u_md5.pas',
+  Olf.FMX.AboutDialog in '..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialog.pas',
+  Olf.FMX.AboutDialogForm in '..\lib-externes\AboutDialog-Delphi-Component\src\Olf.FMX.AboutDialogForm.pas' {OlfAboutDialogForm};
 
 {$R *.res}
 
