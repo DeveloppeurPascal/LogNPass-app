@@ -55,7 +55,8 @@ uses
   System.ImageList,
   FMX.ImgList,
   FMX.Objects,
-  FireDAC.Phys.SQLiteWrapper.Stat;
+  FireDAC.Phys.SQLiteWrapper.Stat,
+  Olf.FMX.AboutDialog, FireDAC.Phys.SQLiteWrapper.FDEStat;
 
 type
   TfrmMain = class(TForm)
@@ -114,6 +115,8 @@ type
     switchAfficherPassPhrase: TSwitch;
     lblReglagesAfficherPassPhraseInfos: TLabel;
     lblDetailCodeEdit: TEdit;
+    OlfAboutDialog1: TOlfAboutDialog;
+    FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink;
     procedure btnListeAjouterClick(Sender: TObject);
     procedure btnListeBackClick(Sender: TObject);
     procedure lstListeItemClick(const Sender: TObject;
@@ -126,12 +129,14 @@ type
     procedure btnCrtEnregistrerClick(Sender: TObject);
     procedure btnListeSupprimerClick(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
-    procedure btnAProposGoWebClick(Sender: TObject);
     procedure lblDetailCodeResize(Sender: TObject);
     procedure switchAfficherPassPhraseSwitch(Sender: TObject);
     procedure lblDetailCodeClick(Sender: TObject);
     procedure edtDetailPassphraseClick(Sender: TObject);
     procedure pbFondHautResize(Sender: TObject);
+    procedure OlfAboutDialog1URLClick(const AURL: string);
+    procedure btnAProposGoWebClick(Sender: TObject);
+  private
   protected
     api_key, api_num, api_sec: string;
     timer_en_cours: boolean;
@@ -146,10 +151,8 @@ type
     procedure masquer_PassPhrase;
     procedure afficher_PassPhrase;
     procedure positionne_barre_de_temps;
-  private
-    { Déclarations privées }
+    procedure InitMainFormCaption;
   public
-    { Déclarations publiques }
   end;
 
 var
@@ -167,7 +170,8 @@ uses
   System.JSON,
   dm,
   u_urlOpen,
-  System.UIConsts;
+  System.UIConsts,
+  Olf.FMX.AboutDialogForm;
 
 procedure TfrmMain.btnCrtEnregistrerClick(Sender: TObject);
 begin
@@ -299,7 +303,7 @@ end;
 
 procedure TfrmMain.btnAProposGoWebClick(Sender: TObject);
 begin
-  url_Open_In_Browser('https://lognpass.fr');
+  url_Open_In_Browser(OlfAboutDialog1.URL);
 end;
 
 procedure TfrmMain.btnCrtCancelClick(Sender: TObject);
@@ -328,6 +332,7 @@ procedure TfrmMain.FormCreate(Sender: TObject);
 var
   encrypter_db: boolean;
 begin
+  InitMainFormCaption;
 {$IF Defined(ANDROID)}
   btnListeSupprimer.Text := '';
 {$ENDIF}
@@ -395,11 +400,22 @@ begin
     LognpassConnection.Params.Values['Encrypt'] := 'no';
     LognpassConnection.Connected := true;
   end;
-  lblAProposTexte.Text := 'Log''n Pass' + LineFeed +
-    '(c) Patrick Prémartin / Olf Software 2016-2023' + LineFeed + LineFeed +
-    'Pictos : kolopach / fotolia.com' + LineFeed + 'Logo : Patrick Prémartin' +
-    LineFeed + LineFeed + 'Développé sous Delphi 11.2 Alexandria' + LineFeed +
-    LineFeed + 'Contacts et infos sur https://lognpass.fr';
+  lblAProposTexte.Text := 'Log''n Pass' + sLineBreak +
+    '(c) Patrick Prémartin / Olf Software 2016-2024' + sLineBreak + sLineBreak +
+    'Pictos : kolopach (Fotolia.com)' + sLineBreak + 'Logo : Patrick Prémartin'
+    + sLineBreak + sLineBreak + 'Développé sous Delphi 12.1 Athens' + sLineBreak
+    + sLineBreak + 'Contacts et infos sur https://lognpass.fr';
+end;
+
+procedure TfrmMain.InitMainFormCaption;
+begin
+{$IFDEF DEBUG}
+  caption := '[DEBUG] ';
+{$ELSE}
+  caption := '';
+{$ENDIF}
+  caption := caption + OlfAboutDialog1.Titre + ' v' +
+    OlfAboutDialog1.VersionNumero;
 end;
 
 procedure TfrmMain.lblDetailCodeClick(Sender: TObject);
@@ -497,6 +513,11 @@ begin
   PassPhraseVisible := false;
   edtDetailPassphrase.Visible := PassPhraseVisible;
   lblDetailPassphrase.Visible := PassPhraseVisible;
+end;
+
+procedure TfrmMain.OlfAboutDialog1URLClick(const AURL: string);
+begin
+  url_Open_In_Browser(AURL);
 end;
 
 function TfrmMain.PassPhraseCreate: string;
