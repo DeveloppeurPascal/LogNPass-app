@@ -13,36 +13,6 @@ Une fois fait il ne vous reste plus qu'à générer un code temporaire lorsque v
 
 Ce dépôt de code contient un projet développé en langage Pascal Objet sous Delphi. Vous ne savez pas ce qu'est Dephi ni où le télécharger ? Vous en saurez plus [sur ce site web](https://delphi-resources.developpeur-pascal.fr/).
 
-## Où télécharger l'application ?
-
-Si vous ne voulez pas compiler vous même le programme vous pouvez aussi [télécharger une version](https://lognpass.fr/c/_5-telecharger.html) pour votre systèmes d'exploitation :
-
-* Apple iOS (ARM - 64 bits) : [App Store](https://apps.apple.com/us/app/logn-pass/id1046096987)
-* Apple macOS (x64 - processeurs Intel) : [Mac App Store](https://apps.apple.com/us/app/logn-pass/id1046096987) - [GitHub (macOS High Sierra et au delà)](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
-* Apple macOS (ARM - processeurs Apple Silicon M1/M2/...) : [Mac App Store](https://apps.apple.com/us/app/logn-pass/id1046096987) - [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
-* Android (ARM - 32 bits) : [Amazon Appstore](https://www.amazon.fr/OLF-SOFTWARE-Logn-Pass/dp/B01B3HU94U/ref=sr_1_1) - [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
-* Android (ARM - 64 bits) : [Google Play](https://play.google.com/store/apps/details?id=olfsoftware.lognpass.android) - [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases)
-* Microsoft Windows (x86 - 32 bits) : [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases) - [Microsoft Store](https://www.microsoft.com/store/apps/9N6VK8JKSRNX)
-* Microsoft Windows (x64 - 64 bits) : [GitHub](https://github.com/DeveloppeurPascal/LogNPass-app/releases) - [Microsoft Store](https://www.microsoft.com/store/apps/9N6VK8JKSRNX)
-
-Les téléchargements depuis GitHub sont autonomes. Vous ne serez prévenus d'une nouvelle version du programme que si vous suivez ce projet et en demandez les notifications à chaque release.
-
-Dans la plupart des cas nous recommandons de passer par un magasin d'application qui vous permettra de faire automatiquement les mises à jours du programme.
-
-## Installation
-
-Pour télécharger ce projet il est recommandé de passer par "git" mais vous pouvez aussi télécharger un ZIP directement depuis [son dépôt GitHub](https://github.com/DeveloppeurPascal/LogNPass-app).
-
-**Attention :** si le projet utilise des dépendances sous forme de sous modules ils seront absents du fichier ZIP. Vous devrez les télécharger à la main.
-
-## Dépendances
-
-Ce dépôt de code dépend des dépôts suivants :
-
-* [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) dans le sous dossier ./lib-externes/AboutDialog-Delphi-Component
-* [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) dans le sous dossier ./lib-externes/librairies
-* [DeveloppeurPascal/LogNPass-Delphi](https://github.com/DeveloppeurPascal/LogNPass-Delphi) dans le sous dossier ./lib-externes/LogNPass-Delphi
-
 ## Protéger vos sites et programmes
 
 Si vous désirez implémenter Log'n Pass dans vos sites ou programmes il vous suffit d'ajouter un champ texte (ou plusieurs) à vos comptes utilisateurs pour y saisir la pass phrase utilisée pour générer les codes.
@@ -51,6 +21,41 @@ Cette phrase ou série de lettres et chiffres doit être générée de votre cô
 
 Pour contrôler l'accès avec Log'n Pass il vous suffit ensuite d'utiliser l'un de [nos kits de développement](https://lognpass.fr/c/_3-integrer.html) ou ajouter le vôtre. L'implémentation n'est pas très compliquée.
 
+## Utiliser ce logiciel
+
+Ce logiciel est disponible dans une version de production directement installable ou exécutable. Il est distribué en freeware.
+
+Vous pouvez le télécharger et le rediffuser gratuitement à condition de ne pas en modifier le contenu (installeur, programme, fichiers annexes, ...).
+
+[Télécharger le programme ou son installeur](https://lognpass.fr/c/_5-telecharger.html)
+
+Vous pouvez aussi [consulter le site du logiciel](https://lognpass.fr/) pour en savoir plus sur son fonctionnement, accéder à des vidéos et articles, connaître les différentes versions disponibles et leurs fonctionnalités, contacter le support utilisateurs...
+
+## Installation des codes sources
+
+Pour télécharger ce dépôt de code il est recommandé de passer par "git" mais vous pouvez aussi télécharger un ZIP directement depuis [son dépôt GitHub](https://github.com/DeveloppeurPascal/LogNPass-app).
+
+Ce projet utilise des dépendances sous forme de sous modules. Ils seront absents du fichier ZIP. Vous devrez les télécharger à la main.
+
+* [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) dans le sous dossier ./lib-externes/AboutDialog-Delphi-Component
+* [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) dans le sous dossier ./lib-externes/librairies
+* [DeveloppeurPascal/LogNPass-Delphi](https://github.com/DeveloppeurPascal/LogNPass-Delphi) dans le sous dossier ./lib-externes/LogNPass-Delphi
+
+## Licence d'utilisation de ce dépôt de code et de son contenu
+
+Ces codes sources sont distribués sous licence [AGPL 3.0 ou ultérieure](https://choosealicense.com/licenses/agpl-3.0/).
+
+Vous êtes globalement libre d'utiliser le contenu de ce dépôt de code n'importe où à condition :
+* d'en faire mention dans vos projets
+* de diffuser les modifications apportées aux fichiers fournis dans ce projet sous licence AGPL (en y laissant les mentions de copyright d'origine (auteur, lien vers ce dépôt, licence) obligatoirement complétées par les vôtres)
+* de diffuser les codes sources de vos créations sous licence AGPL
+
+Si cette licence ne convient pas à vos besoins vous pouvez acheter un droit d'utilisation de ce projet sous la licence [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/) ou une licence commerciale dédiée ([contactez l'auteur](https://developpeur-pascal.fr/nous-contacter.php) pour discuter de vos besoins).
+
+Ces codes sources sont fournis en l'état sans garantie d'aucune sorte.
+
+Certains éléments inclus dans ce dépôt peuvent dépendre de droits d'utilisation de tiers (images, sons, ...). Ils ne sont pas réutilisables dans vos projets sauf mention contraire.
+
 ## Comment demander une nouvelle fonctionnalité, signaler un bogue ou une faille de sécurité ?
 
 Si vous voulez une réponse du propriétaire de ce dépôt la meilleure façon de procéder pour demander une nouvelle fonctionnalité ou signaler une anomalie est d'aller sur [le dépôt de code sur GitHub](https://github.com/DeveloppeurPascal/LogNPass-app) et [d'ouvrir un ticket](https://github.com/DeveloppeurPascal/LogNPass-app/issues).
@@ -58,12 +63,6 @@ Si vous voulez une réponse du propriétaire de ce dépôt la meilleure façon d
 Si vous avez trouvé une faille de sécurité n'en parlez pas en public avant qu'un correctif n'ait été déployé ou soit disponible. [Contactez l'auteur du dépôt en privé](https://developpeur-pascal.fr/nous-contacter.php) pour expliquer votre trouvaille.
 
 Vous pouvez aussi cloner ce dépôt de code et participer à ses évolutions en soumettant vos modifications si vous le désirez. Lisez les explications dans le fichier [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Modèle de licence double
-
-Ce projet est distribué sous licence [AGPL 3.0 ou ultérieure] (https://choosealicense.com/licenses/agpl-3.0/).
-
-Si vous voulez l'utiliser en totalité ou en partie dans vos projets mais ne voulez pas en partager les sources ou ne voulez pas distribuer votre projet sous la même licence, vous pouvez acheter le droit de l'utiliser sous la licence [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/) ou une licence dédiée ([contactez l'auteur](https://developpeur-pascal.fr/nous-contacter.php) pour discuter de vos besoins).
 
 ## Supportez ce projet et son auteur
 
