@@ -613,13 +613,13 @@
         </DCCReference>
         <DCCReference Include="u_ajax.pas"/>
         <DCCReference Include="..\lib-externes\LogNPass-Delphi\src\u_lognpass.pas"/>
-        <DCCReference Include="..\lib-externes\librairies\u_md5.pas"/>
         <DCCReference Include="dm.pas">
             <Form>DataModule1</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="..\lib-externes\librairies\u_urlOpen.pas"/>
+        <DCCReference Include="..\lib-externes\librairies\src\u_urlOpen.pas"/>
+        <DCCReference Include="..\lib-externes\librairies\src\u_md5.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
