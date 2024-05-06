@@ -3,7 +3,10 @@ unit dm;
 interface
 
 uses
-  System.SysUtils, System.Classes, System.ImageList, FMX.ImgList;
+  System.SysUtils,
+  System.Classes,
+  System.ImageList,
+  FMX.ImgList;
 
 type
   TDataModule1 = class(TDataModule)
