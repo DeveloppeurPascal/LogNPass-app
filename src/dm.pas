@@ -11,6 +11,7 @@ uses
 type
   TDataModule1 = class(TDataModule)
     ImageList1: TImageList;
+    imgAppLogo: TImageList;
   private
     { Déclarations privées }
   public
