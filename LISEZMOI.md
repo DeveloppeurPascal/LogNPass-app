@@ -1,6 +1,6 @@
 # Log'n Pass (logiciel desktop et application mobile)
 
-[This page in english.](README.md)
+[This page in English.](README.md)
 
 Codes sources de l'application [Log'n Pass](https://lognpass.fr) fournissant les codes d'accès uniques (OTP - one time password) pour les logiciels et sites référencés à travers l'API Log'n Pass.
 
@@ -20,6 +20,12 @@ Si vous désirez implémenter Log'n Pass dans vos sites ou programmes il vous su
 Cette phrase ou série de lettres et chiffres doit être générée de votre côté et resaisie dans l'application ou de préférence laissée libre en saisie pour que vos utilisateurs y mettent ce qu'ils veulent.
 
 Pour contrôler l'accès avec Log'n Pass il vous suffit ensuite d'utiliser l'un de [nos kits de développement](https://lognpass.fr/c/_3-integrer.html) ou ajouter le vôtre. L'implémentation n'est pas très compliquée.
+
+## Présentations et conférences
+
+### Twitch
+
+Suivez mes streams de développement de logiciels, jeux vidéo, applications mobiles et sites web sur [ma chaîne Twitch](https://www.twitch.tv/patrickpremartin) ou en rediffusion sur [Serial Streameur](https://serialstreameur.fr) la plupart du temps en français.
 
 ## Utiliser ce logiciel
 

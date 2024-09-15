@@ -21,6 +21,12 @@ This phrase or series of letters and numbers must be generated on your side and 
 
 To control access with Log'n Pass, you just have to use one of [our development kits](https://lognpass.fr/c/_3-integrer.html) or add your own. The implementation is not very complicated.
 
+## Talks and conferences
+
+### Twitch
+
+Follow my development streams of software, video games, mobile applications and websites on [my Twitch channel](https://www.twitch.tv/patrickpremartin) or as replays on [Serial Streameur](https://serialstreameur.fr) mostly in French.
+
 ## Using this software
 
 This software is available in a directly installable or executable production version. It is distributed as freeware.
