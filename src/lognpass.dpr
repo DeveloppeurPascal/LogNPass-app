@@ -1,3 +1,35 @@
+﻿/// <summary>
+/// ***************************************************************************
+///
+/// Log'n Pass
+///
+/// Copyright 2016-2024 Patrick Prémartin under AGPL 3.0 license.
+///
+/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+/// DEALINGS IN THE SOFTWARE.
+///
+/// ***************************************************************************
+///
+/// Author(s) :
+/// Patrick PREMARTIN
+///
+/// Site :
+/// https://lognpass.fr/
+///
+/// Project site :
+/// https://github.com/DeveloppeurPascal/LogNPass-app
+///
+/// ***************************************************************************
+/// File last update : 2024-05-06T19:33:24.000+02:00
+/// Signature : a218de967c23570ac390f92e55857eb2d21d8aa2
+/// ***************************************************************************
+/// </summary>
+
 program lognpass;
 
 uses

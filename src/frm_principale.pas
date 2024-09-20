@@ -1,3 +1,35 @@
+/// <summary>
+/// ***************************************************************************
+///
+/// Log'n Pass
+///
+/// Copyright 2016-2024 Patrick Prémartin under AGPL 3.0 license.
+///
+/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+/// DEALINGS IN THE SOFTWARE.
+///
+/// ***************************************************************************
+///
+/// Author(s) :
+/// Patrick PREMARTIN
+///
+/// Site :
+/// https://lognpass.fr/
+///
+/// Project site :
+/// https://github.com/DeveloppeurPascal/LogNPass-app
+///
+/// ***************************************************************************
+/// File last update : 2024-09-20T19:02:08.000+02:00
+/// Signature : e456483a4770cd04b8fe76d9dfed4c51eaeccda5
+/// ***************************************************************************
+/// </summary>
+
 unit frm_principale;
 
 interface
@@ -32,8 +64,6 @@ uses
   FireDAC.Stan.Pool,
   FireDAC.Stan.Async,
   FireDAC.Phys,
-  FireDAC.Phys.SQLite,
-  FireDAC.Phys.SQLiteDef,
   FireDAC.Stan.ExprFuncs,
   FireDAC.FMXUI.Wait,
   FireDAC.Stan.Param,
@@ -55,9 +85,10 @@ uses
   System.ImageList,
   FMX.ImgList,
   FMX.Objects,
-  FireDAC.Phys.SQLiteWrapper.Stat,
   Olf.FMX.AboutDialog,
-  FireDAC.Phys.SQLiteWrapper.FDEStat;
+  FireDAC.Phys.SQLiteWrapper.FDEStat,
+  FireDAC.Phys.SQLite,
+  FireDAC.Phys.SQLiteDef;
 
 type
   TfrmMain = class(TForm)
