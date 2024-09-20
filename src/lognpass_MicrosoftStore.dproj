@@ -6,7 +6,7 @@
         <MainSource>lognpass_MicrosoftStore.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">Win64</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
         <PlatformSDK Condition="'$(PlatformSDK)'=='' And '$(Platform)'=='Android64'">AndroidSDK25.2.5_64bit.sdk</PlatformSDK>
@@ -408,7 +408,7 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <BT_BuildType>AppStore</BT_BuildType>
-        <VerInfo_Keys>CompanyName=;FileDescription=Générateur de codes uniques pour utilisateurs de sites protégés par Log&apos;n Pass;FileVersion=1.2.0.1;InternalName=;LegalCopyright=2016-2024 Patrick Prémartin - Olf Software;LegalTrademarks=;OriginalFilename=;ProductName=Log&apos;n Pass;ProductVersion=1.2;Comments=;ProgramID=fr.olfsoftware.lognpass</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=Générateur de codes uniques pour utilisateurs de sites protégés par Log&apos;n Pass;FileVersion=1.2.0.0;InternalName=;LegalCopyright=2016-2024 Patrick Prémartin - Olf Software;LegalTrademarks=;OriginalFilename=;ProductName=Log&apos;n Pass;ProductVersion=1.2;Comments=;ProgramID=fr.olfsoftware.lognpass</VerInfo_Keys>
         <Icon_MainIcon>..\assets\icons\lognpass.ico</Icon_MainIcon>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
         <Icns_MainIcns>..\assets\icons\lognpass.icns</Icns_MainIcns>
@@ -419,12 +419,10 @@
         <PF_UWPPublisherDisplayName>OLF SOFTWARE</PF_UWPPublisherDisplayName>
         <VerInfo_MajorVer>1</VerInfo_MajorVer>
         <VerInfo_MinorVer>2</VerInfo_MinorVer>
-        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>1</VerInfo_Build>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <BT_BuildType>AppStore</BT_BuildType>
-        <VerInfo_Keys>CompanyName=;FileDescription=Générateur de codes uniques pour utilisateurs de sites protégés par Log&apos;n Pass;FileVersion=1.2.0.1;InternalName=;LegalCopyright=2016-2024 Patrick Prémartin - Olf Software;LegalTrademarks=;OriginalFilename=;ProductName=Log&apos;n Pass;ProductVersion=1.2;Comments=;ProgramID=fr.olfsoftware.lognpass</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=Générateur de codes uniques pour utilisateurs de sites protégés par Log&apos;n Pass;FileVersion=1.2.0.0;InternalName=;LegalCopyright=2016-2024 Patrick Prémartin - Olf Software;LegalTrademarks=;OriginalFilename=;ProductName=Log&apos;n Pass;ProductVersion=1.2;Comments=;ProgramID=fr.olfsoftware.lognpass</VerInfo_Keys>
         <Icon_MainIcon>..\assets\icons\lognpass.ico</Icon_MainIcon>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <Icns_MainIcns>..\assets\icons\lognpass.icns</Icns_MainIcns>
@@ -435,8 +433,6 @@
         <PF_UWPDistributionType>Store</PF_UWPDistributionType>
         <VerInfo_MajorVer>1</VerInfo_MajorVer>
         <VerInfo_MinorVer>2</VerInfo_MinorVer>
-        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>1</VerInfo_Build>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -538,8 +534,6 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png" Configuration="Debug" Class="UWP_DelphiLogo150"/>
-                <DeployFile LocalName="$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png" Configuration="Debug" Class="UWP_DelphiLogo150"/>
-                <DeployFile LocalName="$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png" Configuration="Debug" Class="UWP_DelphiLogo44"/>
                 <DeployFile LocalName="$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png" Configuration="Debug" Class="UWP_DelphiLogo44"/>
                 <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Debug" Class="ProjectOSXResource"/>
                 <DeployFile LocalName="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Configuration="Debug" Class="AndroidLibnativeArmeabiFile"/>
@@ -549,8 +543,6 @@
                 <DeployFile LocalName="$(BDS)\lib\android\debug\x86\libnative-activity.so" Configuration="Debug" Class="AndroidLibnativeX86File"/>
                 <DeployFile LocalName="$(BDS)\lib\android\debug\x86\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeX86File"/>
                 <DeployFile LocalName="$(BDS)\lib\android\release\armeabi\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeArmeabiFile"/>
-                <DeployFile LocalName="$(BDS)\lib\android\release\armeabi\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeArmeabiFile"/>
-                <DeployFile LocalName="$(BDS)\lib\android\release\mips\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeMipsFile"/>
                 <DeployFile LocalName="$(BDS)\lib\android\release\mips\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeMipsFile"/>
                 <DeployFile LocalName="$(BDS)\lib\android\release\x86\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeX86File"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-100x100.png" Configuration="Debug" Class="iPad_SpotLight100"/>
@@ -563,15 +555,11 @@
                 <DeployFile LocalName="..\assets\icons\lognpass-114x114.png" Configuration="Debug" Class="iPhone_AppIcon114"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-114x114.png" Configuration="Release" Class="iPhone_AppIcon114"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-120x120.png" Configuration="Debug" Class="iPhone_AppIcon120"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-120x120.png" Configuration="Release" Class="iPhone_AppIcon120"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-120x120.png" Configuration="Release" Class="iPhone_Spotlight120"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-1242x2208.png" Configuration="Release" Class="iPhone_Launch1242"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-144x144.png" Configuration="Debug" Class="iPad_AppIcon144"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-144x144.png" Configuration="Release" Class="Android_LauncherIcon144"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-144x144.png" Configuration="Release" Class="Android_LauncherIcon144"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-144x144.png" Configuration="Release" Class="iPad_AppIcon144"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-150x150.png" Configuration="Microsoft Store" Class="UWP_DelphiLogo150"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-150x150.png" Configuration="Microsoft Store" Class="UWP_DelphiLogo150"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-150x150.png" Configuration="Release" Class="UWP_DelphiLogo150">
                     <Platform Name="Win32">
@@ -587,7 +575,6 @@
                 </DeployFile>
                 <DeployFile LocalName="..\assets\icons\lognpass-152x152.png" Configuration="Debug" Class="iPad_AppIcon152"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-152x152.png" Configuration="Release" Class="iPad_AppIcon152"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-152x152.png" Configuration="Release" Class="iPad_AppIcon152"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-1536x2008.png" Configuration="Debug" Class="iPad_Launch1536"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-1536x2008.png" Configuration="Release" Class="iPad_Launch1536"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048"/>
@@ -595,8 +582,6 @@
                 <DeployFile LocalName="..\assets\icons\lognpass-167x167.png" Configuration="Release" Class="iPad_AppIcon167"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-180x180.png" Configuration="Debug" Class="iPhone_AppIcon180"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-180x180.png" Configuration="Release" Class="iPhone_AppIcon180"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-180x180.png" Configuration="Release" Class="iPhone_AppIcon180"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-192x192.png" Configuration="Release" Class="Android_LauncherIcon192"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-192x192.png" Configuration="Release" Class="Android_LauncherIcon192"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-2048x1496.png" Configuration="Debug" Class="iPad_Launch2048"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-2048x1496.png" Configuration="Release" Class="iPad_Launch2048"/>
@@ -605,22 +590,15 @@
                 <DeployFile LocalName="..\assets\icons\lognpass-2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-2208x1242.png" Configuration="Release" Class="iPhone_Launch2208"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-24x24.png" Configuration="Release" Class="Android_NotificationIcon24"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-24x24.png" Configuration="Release" Class="Android_NotificationIcon24"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-29x29.png" Configuration="Debug" Class="iPhone_Spotlight29"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-29x29.png" Configuration="Release" Class="iPad_Setting29"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-320x480.png" Configuration="Debug" Class="iPhone_Launch320"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-320x480.png" Configuration="Release" Class="iPhone_Launch320"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-36x36.png" Configuration="Release" Class="Android_NotificationIcon36"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-36x36.png" Configuration="Release" Class="Android_NotificationIcon36"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-40x40.png" Configuration="Debug" Class="iPhone_Spotlight40"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-40x40.png" Configuration="Release" Class="iPad_SpotLight40"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-40x40.png" Configuration="Release" Class="iPhone_Notification40"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-426x320.png" Configuration="Debug" Class="Android_SplashImage426"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-426x320.png" Configuration="Release" Class="Android_SplashImage426"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-426x320.png" Configuration="Release" Class="Android_SplashImage426"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-426x320.png" Configuration="Release" Class="Android_SplashImage426"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-426x320.png" Configuration="Release" Class="iPhone_LaunchDark3x"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-44x44.png" Configuration="Microsoft Store" Class="UWP_DelphiLogo44"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-44x44.png" Configuration="Microsoft Store" Class="UWP_DelphiLogo44"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-44x44.png" Configuration="Release" Class="UWP_DelphiLogo44">
                     <Platform Name="Win32">
@@ -636,31 +614,22 @@
                 </DeployFile>
                 <DeployFile LocalName="..\assets\icons\lognpass-470x320.png" Configuration="Debug" Class="Android_SplashImage470"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-470x320.png" Configuration="Release" Class="Android_SplashImage470"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-470x320.png" Configuration="Release" Class="Android_SplashImage470"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-470x320.png" Configuration="Release" Class="Android_SplashImage470"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-48x48.png" Configuration="Release" Class="Android_NotificationIcon48"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-48x48.png" Configuration="Release" Class="Android_NotificationIcon48"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-50x50.png" Configuration="Debug" Class="iPad_SpotLight50"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-50x50.png" Configuration="Release" Class="iPad_SpotLight50"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-57x57.png" Configuration="Debug" Class="iPhone_AppIcon57"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-57x57.png" Configuration="Release" Class="iPhone_AppIcon57"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-58x58.png" Configuration="Debug" Class="iPad_Setting58"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-58x58.png" Configuration="Release" Class="iPad_Setting58"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-58x58.png" Configuration="Release" Class="iPhone_Setting58"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-60x60.png" Configuration="Debug" Class="iPhone_AppIcon60"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-60x60.png" Configuration="Release" Class="iPhone_AppIcon60"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-60x60.png" Configuration="Release" Class="iPhone_Notification60"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-640x480.png" Configuration="Debug" Class="Android_SplashImage640"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-640x480.png" Configuration="Release" Class="Android_SplashImage640"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-640x480.png" Configuration="Release" Class="Android_SplashImage640"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-640x480.png" Configuration="Release" Class="Android_SplashImage640"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-640x960.png" Configuration="Debug" Class="iPhone_Launch640"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-640x960.png" Configuration="Release" Class="iPhone_Launch640"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-72x72.png" Configuration="Debug" Class="iPad_AppIcon72"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-72x72.png" Configuration="Release" Class="Android_NotificationIcon72"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-72x72.png" Configuration="Release" Class="Android_NotificationIcon72"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-72x72.png" Configuration="Release" Class="iPad_AppIcon72"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-750x1334.png" Configuration="Debug" Class="iPhone_Launch750"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-750x1334.png" Configuration="Release" Class="iPhone_Launch750"/>
@@ -671,17 +640,11 @@
                 <DeployFile LocalName="..\assets\icons\lognpass-76x76.png" Configuration="Debug" Class="iPad_AppIcon76"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-76x76.png" Configuration="Release" Class="iPad_AppIcon76"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-80x80.png" Configuration="Debug" Class="iPad_SpotLight80"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-80x80.png" Configuration="Release" Class="iPad_SpotLight80"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-80x80.png" Configuration="Release" Class="iPhone_Spotlight80"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-87x87.png" Configuration="Debug" Class="iPhone_AppIcon87"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-87x87.png" Configuration="Release" Class="iPhone_AppIcon87"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-87x87.png" Configuration="Release" Class="iPhone_Setting87"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-960x720.png" Configuration="Debug" Class="Android_SplashImage960"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-960x720.png" Configuration="Release" Class="Android_SplashImage960"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-960x720.png" Configuration="Release" Class="Android_SplashImage960"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-960x720.png" Configuration="Release" Class="Android_SplashImage960"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-960x720.png" Configuration="Release" Class="iPad_LaunchDark2x"/>
-                <DeployFile LocalName="..\assets\icons\lognpass-96x96.png" Configuration="Release" Class="Android_NotificationIcon96"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-96x96.png" Configuration="Release" Class="Android_NotificationIcon96"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-lognpass-android\drawable-hdpi\ic_launcher.png" Configuration="Debug" Class="Android_LauncherIcon72"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-lognpass-android\drawable-hdpi\ic_launcher.png" Configuration="Release" Class="Android_LauncherIcon72"/>
@@ -693,7 +656,6 @@
                 <DeployFile LocalName="..\assets\icons\lognpass-lognpass-android\drawable-xhdpi\ic_launcher.png" Configuration="Release" Class="Android_LauncherIcon96"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-lognpass-android\drawable-xxhdpi\ic_launcher.png" Configuration="Debug" Class="Android_LauncherIcon144"/>
                 <DeployFile LocalName="..\assets\icons\lognpass-lognpass-android\drawable-xxhdpi\ic_launcher.png" Configuration="Release" Class="Android_LauncherIcon144"/>
-                <DeployFile LocalName="..\assets\icons\lognpass.icns" Configuration="Release" Class="ProjectOSXResource"/>
                 <DeployFile LocalName="..\assets\icons\lognpass.icns" Configuration="Release" Class="ProjectOSXResource"/>
                 <DeployFile LocalName="Android64\Release\AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest"/>
                 <DeployFile LocalName="Android64\Release\colors.xml" Configuration="Release" Class="Android_Colors"/>
@@ -707,16 +669,12 @@
                 <DeployFile LocalName="Android\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef"/>
                 <DeployFile LocalName="Android\Debug\styles.xml" Configuration="Debug" Class="AndroidSplashStyles"/>
                 <DeployFile LocalName="Android\Release\AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest"/>
-                <DeployFile LocalName="Android\Release\AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest"/>
                 <DeployFile LocalName="Android\Release\colors.xml" Configuration="Release" Class="Android_Colors"/>
-                <DeployFile LocalName="Android\Release\liblognpass.so" Configuration="Release" Class="ProjectOutput"/>
                 <DeployFile LocalName="Android\Release\liblognpass.so" Configuration="Release" Class="ProjectOutput_Android32"/>
                 <DeployFile LocalName="Android\Release\liblognpass_MicrosoftStore.so" Configuration="Release" Class="ProjectOutput"/>
                 <DeployFile LocalName="Android\Release\splash_image_def.xml" Configuration="Release" Class="AndroidSplashImageDef"/>
-                <DeployFile LocalName="Android\Release\splash_image_def.xml" Configuration="Release" Class="AndroidSplashImageDef"/>
                 <DeployFile LocalName="Android\Release\strings.xml" Configuration="Release" Class="Android_Strings"/>
                 <DeployFile LocalName="Android\Release\styles-v21.xml" Configuration="Release" Class="AndroidSplashStylesV21"/>
-                <DeployFile LocalName="Android\Release\styles.xml" Configuration="Release" Class="AndroidSplashStyles"/>
                 <DeployFile LocalName="Android\Release\styles.xml" Configuration="Release" Class="AndroidSplashStyles"/>
                 <DeployFile LocalName="OSX32\Debug\lognpass.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements"/>
                 <DeployFile LocalName="OSX32\Debug\lognpass.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList"/>
@@ -774,8 +732,6 @@
                 <DeployFile LocalName="iOSDevice64\Debug\lognpass" Configuration="Debug" Class="ProjectOutput"/>
                 <DeployFile LocalName="iOSDevice64\Release\ResourceRules.plist" Configuration="Release" Class="ProjectiOSDeviceResourceRules"/>
                 <DeployFile LocalName="iOSDevice64\Release\lognpass.entitlements" Configuration="Release" Class="ProjectiOSEntitlements"/>
-                <DeployFile LocalName="iOSDevice64\Release\lognpass.entitlements" Configuration="Release" Class="ProjectiOSEntitlements"/>
-                <DeployFile LocalName="iOSDevice64\Release\lognpass.info.plist" Configuration="Release" Class="ProjectiOSInfoPList"/>
                 <DeployFile LocalName="iOSDevice64\Release\lognpass.info.plist" Configuration="Release" Class="ProjectiOSInfoPList"/>
                 <DeployFile LocalName="iOSDevice64\Release\lognpass.launchscreen" Configuration="Release" Class="ProjectiOSLaunchScreen"/>
                 <DeployFile LocalName="iOSDevice64\Release\lognpass" Configuration="Release" Class="ProjectOutput"/>
@@ -787,9 +743,6 @@
                 <DeployFile LocalName="iOSSimulator\Release\lognpass.info.plist" Configuration="Release" Class="ProjectiOSInfoPList"/>
                 <DeployFile LocalName="iOSSimulator\Release\lognpass" Configuration="Release" Class="ProjectOutput"/>
                 <DeployFile LocalName="lognpass_Icns.icns" Configuration="Debug" Class="ProjectOSXResource"/>
-                <DeployFile LocalName="lognpass_Icns.icns" Configuration="Debug" Class="ProjectOSXResource"/>
-                <DeployFile LocalName="lognpass_Icns.icns" Configuration="Release" Class="ProjectOSXResource"/>
-                <DeployFile LocalName="lognpass_Icns.icns" Configuration="Release" Class="ProjectOSXResource"/>
                 <DeployFile LocalName="lognpass_Icns.icns" Configuration="Release" Class="ProjectOSXResource"/>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
