@@ -29,13 +29,23 @@ Follow my development streams of software, video games, mobile applications and 
 
 ## Using this software
 
-This software is available in a directly installable or executable production version. It is distributed as freeware.
+This software is available in a directly installable or executable production version. It is distributed as shareware.
 
 You can download and redistribute it free of charge, provided you do not modify its content (installer, program, additional files, etc.).
 
-[Download program or installer](https://lognpass.fr/c/_5-telecharger.html)
+Download program or installer:
 
-You can also [visit the software website](https://lognpass.fr/) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
+* [Amazon Appstore](https://www.amazon.fr/OLF-SOFTWARE-Logn-Pass/dp/B01B3HU94U/ref=sr_1_1) (Android)
+* [App Store](https://apps.apple.com/us/app/logn-pass/id1046096987) (iOS and macOS)
+* [direct download](https://olfsoftware.lemonsqueezy.com/buy/138427ed-3bc4-4e2e-ba59-5c933363665d) (macOS and Windows)
+* [Google Play](https://play.google.com/store/apps/details?id=olfsoftware.lognpass.android) (Android)
+* [Microsoft Store](https://www.microsoft.com/store/apps/9N6VK8JKSRNX) (Windows)
+
+If you use this software regularly and are satisfied with it, you are invited to purchase an end-user license. Purchasing a license will give you access to software updates, as well as enabling optional features.
+
+[Buy a license](https://store.olfsoftware.fr/en/general-public-software-c-1/logn-pass-p-8)
+
+You can also [visit the software website](https://lognpass.olfsoftware.fr) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
 
 ## Source code installation
 
@@ -46,6 +56,16 @@ This project uses dependencies in the form of sub-modules. They will be absent f
 * [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) in the sub folder ./lib-externes/AboutDialog-Delphi-Component
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) in the sub folder ./lib-externes/librairies
 * [DeveloppeurPascal/LogNPass-Delphi](https://github.com/DeveloppeurPascal/LogNPass-Delphi) in the sub folder ./lib-externes/LogNPass-Delphi
+
+## Compatibility
+
+As an [Embarcadero MVP](https://www.embarcadero.com/resources/partners/mvp-directory), I benefit from the latest versions of [Delphi](https://www.embarcadero.com/products/delphi) and [C++ Builder](https://www.embarcadero.com/products/cbuilder) in [RAD Studio](https://www.embarcadero.com/products/rad-studio) as soon as they are released. I therefore work with these versions.
+
+Normally, my libraries and components should also run on at least the current version of [Delphi Community Edition](https://www.embarcadero.com/products/delphi/starter).
+
+There's no guarantee of compatibility with earlier versions, even though I try to keep my code clean and avoid using too many of the new ways of writing in it (type inference, inline var and multiline strings).
+
+If you detect any anomalies on earlier versions, please don't hesitate to [report them](https://github.com/DeveloppeurPascal/LogNPass-app/issues) so that I can test and try to correct or provide a workaround.
 
 ## License to use this code repository and its contents
 

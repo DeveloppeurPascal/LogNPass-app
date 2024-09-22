@@ -29,13 +29,23 @@ Suivez mes streams de développement de logiciels, jeux vidéo, applications mob
 
 ## Utiliser ce logiciel
 
-Ce logiciel est disponible dans une version de production directement installable ou exécutable. Il est distribué en freeware.
+Ce logiciel est disponible dans une version de production directement installable ou exécutable. Il est distribué en shareware.
 
 Vous pouvez le télécharger et le rediffuser gratuitement à condition de ne pas en modifier le contenu (installeur, programme, fichiers annexes, ...).
 
-[Télécharger le programme ou son installeur](https://lognpass.fr/c/_5-telecharger.html)
+Télécharger le programme ou son installeur :
 
-Vous pouvez aussi [consulter le site du logiciel](https://lognpass.fr/) pour en savoir plus sur son fonctionnement, accéder à des vidéos et articles, connaître les différentes versions disponibles et leurs fonctionnalités, contacter le support utilisateurs...
+* [Amazon Appstore](https://www.amazon.fr/OLF-SOFTWARE-Logn-Pass/dp/B01B3HU94U/ref=sr_1_1) (Android)
+* [App Store](https://apps.apple.com/us/app/logn-pass/id1046096987) (iOS et macOS)
+* [Google Play](https://play.google.com/store/apps/details?id=olfsoftware.lognpass.android) (Android)
+* [Microsoft Store](https://www.microsoft.com/store/apps/9N6VK8JKSRNX) (Windows)
+* [téléchargement direct](https://olfsoftware.lemonsqueezy.com/buy/138427ed-3bc4-4e2e-ba59-5c933363665d) (macOS et Windows)
+
+Si vous utilisez régulièrement ce logiciel et en êtes satisfait vous êtes invité à en acheter une licence d'utilisateur final. L'achat d'une licence vous donnera accès aux mises à jour du logiciel en plus d'activer d'évenuelles fonctionnalités optionnelles.
+
+[Acheter une licence](https://store.olfsoftware.fr/logiciels-grand-public-c-1/logn-pass-p-8)
+
+Vous pouvez aussi [consulter le site du logiciel](https://lognpass.olfsoftware.fr) pour en savoir plus sur son fonctionnement, accéder à des vidéos et articles, connaître les différentes versions disponibles et leurs fonctionnalités, contacter le support utilisateurs...
 
 ## Installation des codes sources
 
@@ -46,6 +56,16 @@ Ce projet utilise des dépendances sous forme de sous modules. Ils seront absent
 * [DeveloppeurPascal/AboutDialog-Delphi-Component](https://github.com/DeveloppeurPascal/AboutDialog-Delphi-Component) dans le sous dossier ./lib-externes/AboutDialog-Delphi-Component
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) dans le sous dossier ./lib-externes/librairies
 * [DeveloppeurPascal/LogNPass-Delphi](https://github.com/DeveloppeurPascal/LogNPass-Delphi) dans le sous dossier ./lib-externes/LogNPass-Delphi
+
+## Compatibilité
+
+En tant que [MVP Embarcadero](https://www.embarcadero.com/resources/partners/mvp-directory) je bénéficie dès qu'elles sortent des dernières versions de [Delphi](https://www.embarcadero.com/products/delphi) et [C++ Builder](https://www.embarcadero.com/products/cbuilder) dans [RAD Studio](https://www.embarcadero.com/products/rad-studio). C'est donc dans ces versions que je travaille.
+
+Normalement mes librairies et composants doivent aussi fonctionner au moins sur la version en cours de [Delphi Community Edition](https://www.embarcadero.com/products/delphi/starter).
+
+Aucune garantie de compatibilité avec des versions antérieures n'est fournie même si je m'efforce de faire du code propre et ne pas trop utiliser les nouvelles façons d'écrire dedans (type inference, inline var et multilines strings).
+
+Si vous détectez des anomalies sur des versions antérieures n'hésitez pas à [les rapporter](https://github.com/DeveloppeurPascal/LogNPass-app/issues) pour que je teste et tente de corriger ou fournir un contournement.
 
 ## Licence d'utilisation de ce dépôt de code et de son contenu
 
