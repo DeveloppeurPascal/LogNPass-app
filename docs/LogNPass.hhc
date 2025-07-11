@@ -2597,16 +2597,253 @@
                                           </OBJECT>
                                           <UL>
                                               <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AfterConstruction">
+                                                  <param name="Local" value="fMainForm.TMainForm.AfterConstruction.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="CurrentLnPRecord">
+                                                  <param name="Local" value="fMainForm.TMainForm.CurrentLnPRecord.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="DoToolsOptionsAction">
                                                   <param name="Local" value="fMainForm.TMainForm.DoToolsOptionsAction.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormCreate">
+                                                  <param name="Local" value="fMainForm.TMainForm.FormCreate.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="GetNewDoc">
                                                   <param name="Local" value="fMainForm.TMainForm.GetNewDoc.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListeAjouterAffiche">
+                                                  <param name="Local" value="fMainForm.TMainForm.ListeAjouterAffiche.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListeDetailAffiche">
+                                                  <param name="Local" value="fMainForm.TMainForm.ListeDetailAffiche.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="ListeVisuAffiche">
+                                                  <param name="Local" value="fMainForm.TMainForm.ListeVisuAffiche.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LoadLogNPassDB">
+                                                  <param name="Local" value="fMainForm.TMainForm.LoadLogNPassDB.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="PassPhraseCreate">
+                                                  <param name="Local" value="fMainForm.TMainForm.PassPhraseCreate.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="TestIfDBMigrationNeeded">
+                                                  <param name="Local" value="fMainForm.TMainForm.TestIfDBMigrationNeeded.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Timer1Timer">
+                                                  <param name="Local" value="fMainForm.TMainForm.Timer1Timer.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="TranslateTexts">
                                                   <param name="Local" value="fMainForm.TMainForm.TranslateTexts.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCrtCancelClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnCrtCancelClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCrtEnregistrerClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnCrtEnregistrerClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnListeAjouterClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnListeAjouterClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnListeBackClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnListeBackClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnListeSupprimerClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnListeSupprimerClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="dessine_progressbar">
+                                                  <param name="Local" value="fMainForm.TMainForm.dessine_progressbar.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtCrtLibelleClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.edtCrtLibelleClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtCrtPassphraseClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.edtCrtPassphraseClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtDetailPassphraseClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.edtDetailPassphraseClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblDetailCodeClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblDetailCodeClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lstListeItemClick">
+                                                  <param name="Local" value="fMainForm.TMainForm.lstListeItemClick.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="pbFondHautResize">
+                                                  <param name="Local" value="fMainForm.TMainForm.pbFondHautResize.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="positionne_barre_de_temps">
+                                                  <param name="Local" value="fMainForm.TMainForm.positionne_barre_de_temps.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Fields">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Timer1">
+                                                  <param name="Local" value="fMainForm.TMainForm.Timer1.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="api_key">
+                                                  <param name="Local" value="fMainForm.TMainForm.api_key.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="api_num">
+                                                  <param name="Local" value="fMainForm.TMainForm.api_num.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="api_sec">
+                                                  <param name="Local" value="fMainForm.TMainForm.api_sec.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCrtCancel">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnCrtCancel.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCrtEnregistrer">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnCrtEnregistrer.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnListeAjouter">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnListeAjouter.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnListeBack">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnListeBack.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnListeSupprimer">
+                                                  <param name="Local" value="fMainForm.TMainForm.btnListeSupprimer.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtCrtLibelle">
+                                                  <param name="Local" value="fMainForm.TMainForm.edtCrtLibelle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtCrtPassphrase">
+                                                  <param name="Local" value="fMainForm.TMainForm.edtCrtPassphrase.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtDetailLibelle">
+                                                  <param name="Local" value="fMainForm.TMainForm.edtDetailLibelle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="edtDetailPassphrase">
+                                                  <param name="Local" value="fMainForm.TMainForm.edtDetailPassphrase.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblCrtLibelle">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblCrtLibelle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblCrtPassphrase">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblCrtPassphrase.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblDetailCode">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblDetailCode.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblDetailCodeEdit">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblDetailCodeEdit.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblDetailCodeTitre">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblDetailCodeTitre.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblDetailLibelle">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblDetailLibelle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblDetailPassphrase">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblDetailPassphrase.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lblListeTitre">
+                                                  <param name="Local" value="fMainForm.TMainForm.lblListeTitre.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="lstListe">
+                                                  <param name="Local" value="fMainForm.TMainForm.lstListe.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="pbDessus">
+                                                  <param name="Local" value="fMainForm.TMainForm.pbDessus.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="pbFondBas">
+                                                  <param name="Local" value="fMainForm.TMainForm.pbFondBas.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="pbFondHaut">
+                                                  <param name="Local" value="fMainForm.TMainForm.pbFondHaut.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="phrase_MD5">
+                                                  <param name="Local" value="fMainForm.TMainForm.phrase_MD5.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="tabListeAjout">
+                                                  <param name="Local" value="fMainForm.TMainForm.tabListeAjout.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="tabListeAjoutLayout">
+                                                  <param name="Local" value="fMainForm.TMainForm.tabListeAjoutLayout.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="tabListeDetail">
+                                                  <param name="Local" value="fMainForm.TMainForm.tabListeDetail.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="tabListeDetailLayout">
+                                                  <param name="Local" value="fMainForm.TMainForm.tabListeDetailLayout.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="tabListeVisu">
+                                                  <param name="Local" value="fMainForm.TMainForm.tabListeVisu.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="tbListeTitre">
+                                                  <param name="Local" value="fMainForm.TMainForm.tbListeTitre.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="tcListe">
+                                                  <param name="Local" value="fMainForm.TMainForm.tcListe.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="temps_restant">
+                                                  <param name="Local" value="fMainForm.TMainForm.temps_restant.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="timer_en_cours">
+                                                  <param name="Local" value="fMainForm.TMainForm.timer_en_cours.html">
                                                   </OBJECT>
                                           </UL>
                                   </UL>
@@ -2650,6 +2887,10 @@
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="TranslateTexts">
                                                   <param name="Local" value="fOptionsForm.TfrmOptions.TranslateTexts.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="btnCloseClick">
+                                                  <param name="Local" value="fOptionsForm.TfrmOptions.btnCloseClick.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="cbShowPassPhraseChange">
@@ -3351,9 +3592,39 @@
                                   </OBJECT>
                                   <UL>
                                       <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Constructors">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Destroy">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.Destroy.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Properties">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AccessList">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.AccessList.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
                                           <param name="Name" value="Methods">
                                           </OBJECT>
                                           <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AsJSON">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.AsJSON.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Current">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.Current.html">
+                                                  </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="GetDocumentExtension">
                                                   <param name="Local" value="uDBLogNPass.TLNPDB.GetDocumentExtension.html">
@@ -3363,10 +3634,138 @@
                                                   <param name="Local" value="uDBLogNPass.TLNPDB.GetDocumentGUID.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetFilePath">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.GetFilePath.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="GetPrivateXORKey">
                                                   <param name="Local" value="uDBLogNPass.TLNPDB.GetPrivateXORKey.html">
                                                   </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Load">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.Load.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="LoadFromJSONObject">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.LoadFromJSONObject.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Save">
+                                                  <param name="Local" value="uDBLogNPass.TLNPDB.Save.html">
+                                                  </OBJECT>
                                           </UL>
+                                  </UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TLNPRecord">
+                                  <param name="Local" value="uDBLogNPass.TLNPRecord.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Constructors">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="Create">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.Create.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="CreateFromJSON">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.CreateFromJSON.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Properties">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="RecType">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.RecType.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="dateheure_creation">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.dateheure_creation.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="dateheure_modification">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.dateheure_modification.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="guid">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.guid.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="libelle">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.libelle.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="passphrase">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.passphrase.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="supprime">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.supprime.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AsJSON">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecord.AsJSON.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TLNPRecordsList">
+                                  <param name="Local" value="uDBLogNPass.TLNPRecordsList.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Constructors">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="CreateFromJSON">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecordsList.CreateFromJSON.html">
+                                                  </OBJECT>
+                                          </UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AddIfNotExists">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecordsList.AddIfNotExists.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AddLogNPassRecord">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecordsList.AddLogNPassRecord.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="AsJSON">
+                                                  <param name="Local" value="uDBLogNPass.TLNPRecordsList.AsJSON.html">
+                                                  </OBJECT>
+                                          </UL>
+                                  </UL>
+                          </UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Enumerations">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TLNPRecType">
+                                  <param name="Local" value="uDBLogNPass.TLNPRecType.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="None">
+                                          <param name="Local" value="uDBLogNPass.TLNPRecType.None.html">
+                                          </OBJECT>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="LogNPass">
+                                          <param name="Local" value="uDBLogNPass.TLNPRecType.LogNPass.html">
+                                          </OBJECT>
                                   </UL>
                           </UL>
                   </UL>
@@ -3512,12 +3911,20 @@
                                                   <param name="Local" value="uDMOldSQLiteDB.TdmOldSQLiteDB.DataModuleCreate.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="GetV1DatabaseFilePath">
+                                                  <param name="Local" value="uDMOldSQLiteDB.TdmOldSQLiteDB.GetV1DatabaseFilePath.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="LognpassConnectionAfterConnect">
                                                   <param name="Local" value="uDMOldSQLiteDB.TdmOldSQLiteDB.LognpassConnectionAfterConnect.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="MigrateToNewDB">
                                                   <param name="Local" value="uDMOldSQLiteDB.TdmOldSQLiteDB.MigrateToNewDB.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="V1DatabaseExists">
+                                                  <param name="Local" value="uDMOldSQLiteDB.TdmOldSQLiteDB.V1DatabaseExists.html">
                                                   </OBJECT>
                                           </UL>
                                       <LI> <OBJECT type="text/sitemap">
