@@ -16,3 +16,6 @@
 [submodule "lib-externes/FMX-Styles-Utils"]
 	path = lib-externes/FMX-Styles-Utils
 	url = https://github.com/DeveloppeurPascal/FMX-Styles-Utils
+[submodule "lib-externes/FMX-Tools-Starter-Kit"]
+	path = lib-externes/FMX-Tools-Starter-Kit
+	url = https://github.com/DeveloppeurPascal/FMX-Tools-Starter-Kit.git
