@@ -1,9 +1,9 @@
 ﻿(* C2PP
   ***************************************************************************
 
-  FMX Tools Starter Kit
+  Log'n Pass
 
-  Copyright 2024-2025 Patrick Prémartin under AGPL 3.0 license.
+  Copyright 2015-2025 Patrick Prémartin under AGPL 3.0 license.
 
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -15,22 +15,18 @@
 
   ***************************************************************************
 
-  A starter kit for your FireMonkey projects in Delphi.
-
-  ***************************************************************************
-
   Author(s) :
   Patrick PREMARTIN
 
   Site :
-  https://fmxtoolsstarterkit.developpeur-pascal.fr/
+  https://lognpass.olfsoftware.fr/
 
   Project site :
-  https://github.com/DeveloppeurPascal/FMX-Tools-Starter-Kit
+  https://github.com/DeveloppeurPascal/LogNPass-app
 
   ***************************************************************************
-  File last update : 2025-02-09T11:13:00.495+01:00
-  Signature : 0c3bda9dbcadd7b0eb3b5c2043d58ca17dde4162
+  File last update : 2025-07-11T12:57:38.000+02:00
+  Signature : 2c973630668fca01fbc7780bf7e48ec0649f9345
   ***************************************************************************
 *)
 

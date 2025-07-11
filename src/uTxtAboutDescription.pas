@@ -1,9 +1,9 @@
 ﻿(* C2PP
   ***************************************************************************
 
-  Bidioo
+  Log'n Pass
 
-  Copyright 2013-2025 Patrick PREMARTIN under AGPL 3.0 license.
+  Copyright 2015-2025 Patrick Prémartin under AGPL 3.0 license.
 
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,14 +19,14 @@
   Patrick PREMARTIN
 
   Site :
-  https://lognpass.olfsoftware.fr
+  https://lognpass.olfsoftware.fr/
 
   Project site :
-  https://github.com/DeveloppeurPascal/Bidioo-v2-Delphi
+  https://github.com/DeveloppeurPascal/LogNPass-app
 
   ***************************************************************************
-  File last update : 2025-05-31T15:21:30.000+02:00
-  Signature : 0ec79016159bb54d6df6806ae8e23f4235c3896e
+  File last update : 2025-07-11T13:06:32.000+02:00
+  Signature : 3ea32c7f70039c11f22265cdfa66bb1be6b96126
   ***************************************************************************
 *)
 
