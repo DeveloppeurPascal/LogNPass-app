@@ -39,6 +39,7 @@ inherited frmOptions: TfrmOptions
       TabOrder = 0
       Text = 'btnClose'
       TextSettings.Trimming = None
+      OnClick = btnCloseClick
     end
   end
 end

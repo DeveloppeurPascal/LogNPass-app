@@ -59,6 +59,7 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure cbShowPassPhraseChange(Sender: TObject);
+    procedure btnCloseClick(Sender: TObject);
   private
   public
     procedure TranslateTexts(const Language: string); override;
@@ -73,6 +74,11 @@ uses
   uConfig;
 
 { TfrmOptions }
+
+procedure TfrmOptions.btnCloseClick(Sender: TObject);
+begin
+  Close;
+end;
 
 procedure TfrmOptions.cbShowPassPhraseChange(Sender: TObject);
 begin
