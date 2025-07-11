@@ -1,32 +1,30 @@
-# Delphi-Projects-Template
+# Log'n Pass (desktop software and mobile application)
 
 [Cette page en français.](LISEZMOI.md)
 
-**A git repository template for my Delphi (or other) projects.**
+Source code of the [Log'n Pass](https://lognpass.fr) application  providing unique access codes (OTP - one time password) for software and sites using the Log'n Pass API.
 
-**This template is distributed under the MIT license. The AGPL license is for the projects I create from this code repository template. Use whatever license you want if you use this template.**
+How it works:
+* List the sites or software to protect in the interface
+* Reference your secret phrases
+* Add the secret phrases on your user account on compatible software and sites
 
+Once done, you just have to generate a temporary code when you need to connect.
 This code repository contains a project developed in Object Pascal language under Delphi. You don't know what Delphi is and where to download it ? You'll learn more [on this web site](https://delphi-resources.developpeur-pascal.fr/).
 
 ## Using this software
 
-Visit [the AAA website](https://BBB.olfsoftware.fr) to download the compiled version, learn more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
+Visit [the Log'n Pass website](https://lognpass.olfsoftware.fr) to download the compiled version, learn more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
 
-## Using this video game
+## Protect your sites and programs with Log'n Pass
 
-Visit [the AAA website](https://BBB.gamolf.fr) to download the compiled version, learn more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
+To implement Log'n Pass in your sites or programs, you just need to add a text field (or several) to your user accounts to enter the pass phrase used to generate the codes.
+
+This phrase or series of letters and numbers must be generated on your side and re-entered in the application or preferably left free for your users to enter what they want.
+
+To control access with Log'n Pass, you just have to use one of [our development kits](https://lognpass.olfsoftware.fr/c/_3-integrer.html) or add your own. The implementation is not very complicated.
 
 ## Talks and conferences
-
-### Online talk
-
-* [talk title](talk URL) (in English)
-* [talk title](talk URL) (in French)
-
-### XXX 2024
-
-* [talk title](talk URL) (in English)
-* [talk title](talk URL) (in French)
 
 ### Twitch
 
@@ -53,7 +51,7 @@ I regularly use the [DocInsight](https://devjetsoftware.com/products/documentati
 
 Documentation is exported in HTML by [DocInsight](https://devjetsoftware.com/products/documentation-insight/) or [PasDoc](https://pasdoc.github.io) to the /docs folder of the repository. You can also [access it online](https://developpeurpascal.github.io/LogNPass-app) through the hosting offered by GitHub Pages.
 
-Further information (tutorials, articles, videos, FAQ, talks and links) can be found on [the project website](https://BBB.developpeur-pascal.fr) or [the project devlog](https://developpeur-pascal.fr/BBB.html).
+Further information (tutorials, articles, videos, FAQ, talks and links) can be found on [the project website](https://lognpass.olfsoftware.fr) or [the project devlog](https://developpeur-pascal.fr/lognpass.html).
 
 If you need explanations or help in understanding or using parts of this project in yours, please [contact me](https://developpeur-pascal.fr/nous-contacter.php). I can either direct you to an online resource, or offer you assistance in the form of a paid or free service, depending on the case. You can also contact me at a conference or during an online presentation.
 
@@ -75,8 +73,6 @@ You are free to use the contents of this code repository anywhere provided :
 * you mention it in your projects
 * distribute the modifications made to the files provided in this AGPL-licensed project (leaving the original copyright notices (author, link to this repository, license) must be supplemented by your own)
 * to distribute the source code of your creations under the AGPL license.
-
-If this license doesn't suit your needs (especially for a commercial project) I also offer [classic licenses for developers and companies](https://BBB.developpeur-pascal.fr).
 
 Some elements included in this repository may depend on third-party usage rights (images, sounds, etc.). They are not reusable in your projects unless otherwise stated.
 
