@@ -25,8 +25,8 @@
   https://github.com/DeveloppeurPascal/LogNPass-app
 
   ***************************************************************************
-  File last update : 2025-07-11T12:22:22.000+02:00
-  Signature : 652805aa405352224044c1e2f820ff3c4d9d1bcd
+  File last update : 2025-07-11T15:09:00.000+02:00
+  Signature : 3500b559112393090641501eb085bb3e2eabef30
   ***************************************************************************
 *)
 
@@ -79,7 +79,9 @@ uses
   uStylePolarLight in '..\_PRIVATE\src\uStylePolarLight.pas' {StylePolarLight: TDataModule},
   fOptionsForm in 'fOptionsForm.pas' {frmOptions},
   uConfigLogNPass in 'uConfigLogNPass.pas',
-  u_lognpass in '..\lib-externes\LogNPass4Delphi\src\u_lognpass.pas';
+  u_lognpass in '..\lib-externes\LogNPass4Delphi\src\u_lognpass.pas',
+  uDMOldSQLiteDB in 'uDMOldSQLiteDB.pas' {dmOldSQLiteDB: TDataModule},
+  uDBLogNPass in 'uDBLogNPass.pas';
 
 {$R *.res}
 

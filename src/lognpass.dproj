@@ -659,6 +659,12 @@
         </DCCReference>
         <DCCReference Include="uConfigLogNPass.pas"/>
         <DCCReference Include="..\lib-externes\LogNPass4Delphi\src\u_lognpass.pas"/>
+        <DCCReference Include="uDMOldSQLiteDB.pas">
+            <Form>dmOldSQLiteDB</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="uDBLogNPass.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
