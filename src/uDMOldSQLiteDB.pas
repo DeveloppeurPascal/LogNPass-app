@@ -25,8 +25,8 @@
   https://github.com/DeveloppeurPascal/LogNPass-app
 
   ***************************************************************************
-  File last update : 2025-07-11T15:12:02.000+02:00
-  Signature : debef1ec34b7cd170821a680999c55066b0be83f
+  File last update : 2025-07-11T20:15:34.000+02:00
+  Signature : c17fd4fa06a6257b89a5d5ce924c85e2cce82e76
   ***************************************************************************
 *)
 
