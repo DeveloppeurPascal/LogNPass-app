@@ -34,6 +34,17 @@ unit uDMOldSQLiteDB;
 
 interface
 
+(*
+  CREATE TABLE IF NOT EXISTS liste
+  guid VARCHAR(50) DEFAULT "",
+  dateheure_creation DATETIME DEFAULT CURRENT_TIMESTAMP,
+  dateheure_modification DATETIME DEFAULT CURRENT_TIMESTAMP,
+  libelle TEXT NOT NULL,
+  passphrase TEXT NOT NULL,
+  supprime CHAR(1) NOT NULL DEFAULT "N",
+  PRIMARY KEY(guid, dateheure_creation))
+*)
+
 uses
   System.SysUtils,
   System.Classes,
@@ -68,8 +79,12 @@ type
     procedure LognpassConnectionAfterConnect(Sender: TObject);
   private
     DBFilePath: string;
+  protected
+    class function GetV1DatabaseFilePath(const Encrypted
+      : boolean = true): string;
   public
     class procedure MigrateToNewDB;
+    class function V1DatabaseExists: boolean;
   end;
 
 implementation
@@ -78,99 +93,93 @@ implementation
 {$R *.dfm}
 
 uses
-  System.IOUtils;
+  System.StrUtils,
+  System.JSON,
+  System.IOUtils,
+  uDBLogNPass;
 
 procedure TdmOldSQLiteDB.DataModuleCreate(Sender: TObject);
-var
-  encrypter_db: boolean;
 begin
-{$IFDEF RELEASE}
-  encrypter_db := not FileExists(TPath.Combine(TPath.GetDocumentsPath,
-    'lognpass-ne.db'));
-{$ELSE}
-  encrypter_db := not FileExists(TPath.Combine(TPath.GetDocumentsPath,
-    'lognpass-ne-debug.db'));
-{$ENDIF}
-  if encrypter_db then
-    try
-{$IFDEF RELEASE}
-      DBFilePath := TPath.Combine(TPath.GetDocumentsPath, 'lognpass.db');
-{$ELSE}
-      DBFilePath := TPath.Combine(TPath.GetDocumentsPath, 'lognpass-debug.db');
-{$ENDIF}
-{$INCLUDE '..\_PRIVATE\src\db_user_pass.inc'}
-    except
-      encrypter_db := false;
-    end;
-  if (not encrypter_db) then
-  begin
-{$IFDEF RELEASE}
-    DBFilePath := TPath.Combine(TPath.GetDocumentsPath, 'lognpass-ne.db');
-{$ELSE}
-    DBFilePath := TPath.Combine(TPath.GetDocumentsPath, 'lognpass-ne-debug.db');
-{$ENDIF}
-    LognpassConnection.Params.Values['User_Name'] := '';
-    LognpassConnection.Params.Values['Password'] := '';
-    LognpassConnection.Params.Values['Encrypt'] := 'no';
-  end;
-
+  DBFilePath := GetV1DatabaseFilePath(true);
   if tfile.Exists(DBFilePath) then
   begin
     LognpassConnection.Params.Values['Database'] := DBFilePath;
+{$INCLUDE '..\_PRIVATE\src\db_user_pass.inc'}
     LognpassConnection.Connected := true;
-  end;
-end;
-
-procedure TdmOldSQLiteDB.LognpassConnectionAfterConnect(Sender: TObject);
-var
-  guid: TGUID;
-begin
-  if CreateGUID(guid) <> 0 then
-  begin
-    raise Exception.Create('Problème de connexion.');
   end
   else
   begin
-    LognpassConnection.ExecSQL('CREATE TABLE IF NOT EXISTS liste (' +
-      'guid VARCHAR(50) DEFAULT "' + GUIDToString(guid) + '",' +
-      'dateheure_creation DATETIME DEFAULT CURRENT_TIMESTAMP,' +
-      'dateheure_modification DATETIME DEFAULT CURRENT_TIMESTAMP,' +
-      'libelle TEXT NOT NULL,' + 'passphrase TEXT NOT NULL,' +
-      'supprime CHAR(1) NOT NULL DEFAULT "N",' +
-      'PRIMARY KEY(guid, dateheure_creation))');
+    DBFilePath := GetV1DatabaseFilePath(false);
+    if tfile.Exists(DBFilePath) then
+    begin
+      LognpassConnection.Params.Values['Database'] := DBFilePath;
+      LognpassConnection.Params.Values['User_Name'] := '';
+      LognpassConnection.Params.Values['Password'] := '';
+      LognpassConnection.Params.Values['Encrypt'] := 'no';
+      LognpassConnection.Connected := true;
+    end;
   end;
+end;
+
+class function TdmOldSQLiteDB.GetV1DatabaseFilePath(const Encrypted
+  : boolean): string;
+begin
+{$IFDEF RELEASE}
+  result := TPath.Combine(TPath.GetDocumentsPath, 'lognpass' + ifthen(Encrypted,
+    '', '-ne') + '.db');
+{$ELSE}
+  result := TPath.Combine(TPath.GetDocumentsPath, 'lognpass' + ifthen(Encrypted,
+    '', '-ne') + '-debug.db');
+{$ENDIF}
+end;
+
+procedure TdmOldSQLiteDB.LognpassConnectionAfterConnect(Sender: TObject);
+begin
   ListeTable.Active := true;
 end;
 
 class procedure TdmOldSQLiteDB.MigrateToNewDB;
 var
   dm: TdmOldSQLiteDB;
+  lst: TLNPRecordsList;
+  rec: TLNPRecord;
 begin
   dm := TdmOldSQLiteDB.Create(nil);
   try
     if dm.ListeTable.Active then
       try
+        lst := TLNPDB.Current.AccessList;
         dm.ListeTable.First;
         while not dm.ListeTable.Eof do
         begin
-          // TODO : stocker dans nouveau format
+          rec := TLNPRecord.Create;
+          rec.guid := dm.ListeTable.FieldByName('guid').AsString;
+          rec.dateheure_creation := dm.ListeTable.FieldByName
+            ('dateheure_creation').AsDateTime;
+          rec.libelle := dm.ListeTable.FieldByName('libelle').AsString;
+          rec.passphrase := dm.ListeTable.FieldByName('passphrase').AsString;
+          rec.supprime := dm.ListeTable.FieldByName('supprime').AsBoolean;
+          rec.RecType := TLNPRecType.LogNPass;
+          rec.dateheure_modification := dm.ListeTable.FieldByName
+            ('dateheure_modification').AsDateTime;
+          lst.AddIfNotExists(rec);
           dm.ListeTable.Next;
         end;
         dm.ListeTable.Close;
         dm.LognpassConnection.Close;
-        // tfile.Move(dm.DBFilePath, dm.DBFilePath + '.1_2');
-        // TODO : à réactiver dans une future version du programme
-        // tfile.Delete(dm.DBFilePath);
+        TLNPDB.Current.Save;
       except
-        // TODO : ajouter erreur de migration
+        raise Exception.Create('Import error !'); // TODO : à traduire
       end;
   finally
     dm.free;
   end;
 end;
 
-initialization
-
-TdmOldSQLiteDB.MigrateToNewDB;
+class function TdmOldSQLiteDB.V1DatabaseExists: boolean;
+begin
+  result := tfile.Exists(GetV1DatabaseFilePath(true)) or
+    tfile.Exists(GetV1DatabaseFilePath(false));
+end;
 
 end.
