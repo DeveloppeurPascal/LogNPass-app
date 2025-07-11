@@ -32,18 +32,28 @@
 * création du fichier de stockage des données en JSON (escendant de TJSONDocument du starter kit)
 * création d'un module de données utiliser pour migrer les informations des versions précédentes vers la nouvelle au démarrage du programme
 
+* pause repas
+
+* finalisation de la classe de stockage (en mémoire et sur disque) de la nouvelle base de données
+* finalisation de la gestion des données de la v1.x
+* finalisation du module d'import des anciennes données dans la nouvelle base
+* copie et adaptations de l'interface de la version 1.x vers la version 2.x pour avoir des fonctionnalités à l'identique
+* vérification des permissions, droits et exceptions d'accès aux URL en http/s
+
+* au démarrage demander à l'utilisateur s'il veut importer les données précédentes si on détecte une base en v1.x
+* migration de la base de données SQLite vers un stockage binaire chiffré
+* tests du projet pour desktop
+
+* export de la doc développeur avec DocInsight
+
+
 ## à suivre...
 
-* demander à l'utilisateur s'il veut importer les données précédentes
-* demander à l'utilisateur s'il veut supprimer les données précédentes
-* finaliser le stockage de la base de données
-* migration de la base de données SQLite vers un stockage binaire chiffré 
+* une fois l'import des données effectué demander à l'utilisateur s'il veut supprimer les données précédentes
 
-* refonte de l'interface utilisateur
-* tests du projet pour desktop
+* ajouter une barre d'outils pour l'utiliser sous iOS et Android
 * tests du projet pour mobiles
 * captures d'écran pour desktop
 * captures d'écran pour mobiles
 * mise à jour des fiches de Log'n Pass sur les magasins d'applications
-* export de la doc développeur avec DocInsight
 * déploiement et soumission de la version 2.0 - 20250711
